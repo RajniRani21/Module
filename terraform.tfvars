@@ -1,0 +1,22 @@
+region="ap-southeast-1"
+profile="default"
+bucket_name="rajni762"
+instance={
+    "test-ec2-1"={
+        ami="ami-01b20f5ea962e3fe7"
+        instance_type="t2.micro"
+    }
+    "test-ec2-2"={
+       ami="ami-01b20f5ea962e3fe7"
+        instance_type="t2.micro" 
+    }
+}
+
+s3_buckets={
+    "demo-1"={
+        acl="private"
+    }
+    "demo-2"={
+        acl="public-read"
+    }
+}
